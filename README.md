@@ -3,7 +3,7 @@
 - Turn on at power point (yellow power cord)
 - Open terminal
 ``` bash
-cd /Jackson/BaxterCurtin/ws
+cd Jackson/BaxterCurtin/ws
 ```
 - Connect to baxter
 ``` bash
