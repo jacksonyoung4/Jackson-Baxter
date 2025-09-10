@@ -67,17 +67,14 @@ if __name__ == "__main__":
     save_path = get_next_filename("baxter_poses")
 
     with open(save_path, "w") as f:
-        f.write("PoseStamped:\n")
-        f.write(f"  frame_id: {current.header.frame_id}\n")
-        f.write("  position:\n")
-        f.write(f"    x: {current.pose.position.x}\n")
-        f.write(f"    y: {current.pose.position.y}\n")
-        f.write(f"    z: {current.pose.position.z}\n")
-        f.write("  orientation:\n")
-        f.write(f"    x: {current.pose.orientation.x}\n")
-        f.write(f"    y: {current.pose.orientation.y}\n")
-        f.write(f"    z: {current.pose.orientation.z}\n")
-        f.write(f"    w: {current.pose.orientation.w}\n")
+
+        f.write(str(current.pose.position.x)+"\n")
+        f.write(str(current.pose.position.y)+"\n")
+        f.write(str(current.pose.position.z)+"\n")
+        f.write(str(current.pose.orientation.x)+"\n")
+        f.write(str(current.pose.orientation.y)+"\n")
+        f.write(str(current.pose.orientation.z)+"\n")
+        f.write(str(current.pose.orientation.w)+"\n")
 
     print(f"Pose saved to {save_path}")
     #current.pose.position.z += 0.1 

@@ -29,7 +29,7 @@ robotiq_closed.emergency_release = False # Should this be True?
 robotiq_closed.stop = False
 robotiq_closed.position = 0.00
 robotiq_closed.speed = 0.1
-robotiq_closed.force = 5.0
+robotiq_closed.force = 0.1
 
 robotiq_open = CommandRobotiqGripperGoal()
 robotiq_open.emergency_release = False # Should this be True?
